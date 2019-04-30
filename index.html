@@ -7,22 +7,27 @@
     <title>Home</title>
 </head>
 <body>
-    <header>Home</header>
+    <h1>Home</h1>
     <article>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="author.html">Author</a>
             <a href="services.html">Services</a>
             <a href="appliances.html">Appliances</a>
-            <a href="memborship.html">Memborship</a>
+            <a href="membership.html">Membership</a>
         </div>
           
         <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776; Sidebar<button> 
+            <button class="openbtn" onclick="openNav()">&#9776; Sidebar</button> 
         </div>
     </article>
     <article>
-        <img src="https://thewanderlustkitchen.com/wp-content/uploads/2015/03/house-remodel-reveal-before-and-after-222.jpg" >
+        <img src="https://thewanderlustkitchen.com/wp-content/uploads/2015/03/house-remodel-reveal-before-and-after-222.jpg">
+
+        <h2>Welcome to my online store</h2>
+        <P>
+            This online store is an actual company located in Chicago Illinois. When I first decided to make this company it was just based off of a television show. We have helped many people with their homes. Renovations, remodeling, and have a store that we sell products if you want to do it yourself. All within a click of a button. How awsome is that!!. Please feel free to look around and explore. Thank You.S
+        </P>
     </article>
 
     <style>
@@ -90,5 +95,18 @@
             .sidebar a {font-size: 18px;}
         }
     </style>
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+         document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 </html>
